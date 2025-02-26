@@ -55,8 +55,9 @@ popd
 
 ynh_go_install
 pushd "$install_dir/server"
- 	ynh_hide_warnings ynh_exec_as_app go mod download && GOOS=linux go build -o $install_dir/watcharr
+ 	ynh_hide_warnings ynh_exec_as_app CGO_ENABLED=1 go build -o $install_dir/watcharr
 popd
+
 ynh_go_remove
 chmod +x "$install_dir/watcharr"
 chown -R "$app:www-data" "$install_dir"
