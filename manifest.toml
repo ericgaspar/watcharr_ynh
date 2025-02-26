@@ -61,3 +61,6 @@ ram.runtime = "50M"
 
     [resources.ports]
     main.default = 3080
+
+    [resources.apt]
+    packages = "sqlite3"
