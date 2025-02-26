@@ -15,7 +15,7 @@ maintainers = ["eric_G"]
 license = "MIT"
 website = "https://watcharr.app/"
 demo = "https://beta.watcharr.app/login?again=1"
-admindoc = "https://watcharr.app/docs"
+admindoc = "https://watcharr.app/docs/introduction"
 code = "https://github.com/sbondCo/Watcharr"
 
 
