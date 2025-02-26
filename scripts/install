@@ -60,6 +60,7 @@ popd
 
 ynh_go_remove
 chmod +x "$install_dir/watcharr"
+chown -R "$app:www-data" "$install_dir"
 
 #=================================================
 # START SYSTEMD SERVICE
